@@ -1,0 +1,145 @@
+body {
+    background: linear-gradient(135deg, #1e1e2f, #0d0c1d);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.todo-app {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #ffda79;
+}
+
+.header p {
+    margin: 0;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.progress-bar {
+    background-color: #3e3e50;
+    border-radius: 5px;
+    height: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.progress {
+    background-color: #00d1b2;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s;
+}
+
+.task-count {
+    font-size: 1.2em;
+    color: #ffda79;
+}
+
+.task-input {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#task-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    flex: 1;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+#add-task-btn {
+    padding: 10px;
+    background-color: #00d1b2;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-task-btn:hover {
+    background-color: #00bfa5;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.task-item.completed {
+    background-color: rgba(0, 209, 178, 0.2);
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task-item span {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.task-item span:hover {
+    color: #00d1b2;
+}
+
+.task-item button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.edit-btn {
+    margin-right: 10px;
+    color: #ffd700;
+}
+
+.edit-btn:hover {
+    color: #ffbf00;
+}
+
+.delete-btn {
+    color: #ff3860;
+}
+
+.delete-btn:hover {
+    color: #ff1744;
+}
